@@ -2,24 +2,26 @@ version: '3'
 services:
   client:
     build:
-      context: .
+      context: ./client
       dockerfile: Dockerfile.react
     ports:
       - "3000:80"
+    volumes:
+      - ./client:/app
 
   server:
     build:
-      context: .
+      context: ./server
       dockerfile: Dockerfile.server
     ports:
       - "5000:5000"
 
   nginx:
     build:
-      context: .
+      context: ./nginx
       dockerfile: Dockerfile.nginx
     ports:
       - "80:80"
     depends_on:
-      - jaczetl_website
+      - client
       - server
