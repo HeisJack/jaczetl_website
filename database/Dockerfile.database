@@ -1,0 +1,3 @@
+FROM postgres:latest
+
+# Optionally, you can include additional configuration or initialization scripts here
