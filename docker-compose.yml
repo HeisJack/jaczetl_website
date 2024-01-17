@@ -3,7 +3,7 @@ services:
   client:
     build:
       context: ./client
-      dockerfile: Dockerfile.react
+      dockerfile: Dockerfile.dev
     ports:
       - "3000:80"
     volumes:
@@ -15,6 +15,8 @@ services:
       dockerfile: Dockerfile.server
     ports:
       - "5000:5000"
+    volumes:
+      - ./server:/server
 
   nginx:
     build:
