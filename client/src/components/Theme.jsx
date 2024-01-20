@@ -22,8 +22,6 @@ const Theme = createTheme({
         },
         logoLinkSubtext:{
             color: (theme) => theme.palette.primary.main,
-            display: 'flex',
-            alignItems: 'flex-end',
             fontSize: '.75vw',
         },
     },

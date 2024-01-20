@@ -7,11 +7,25 @@ import { ThemeProvider } from '@mui/material/styles';
 import Theme from './components/Theme';
 import './styles/fonts.css';
 
+const version = process.env.REACT_APP_VERSION || '1.0.0'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={Theme}>
       <App />
+      <div
+      style={{
+        position: 'fixed',
+        bottom: 0,
+        right: 0,
+        padding: '.5vw',
+        fontSize: '.5vw',
+        color: '#9BB7B6'
+      }}
+      >
+        v{version}
+      </div>
     </ThemeProvider>
   </React.StrictMode>
 );

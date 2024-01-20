@@ -7,6 +7,10 @@ WORKDIR /app
 # Copy package.json and package-lock.json to the container
 COPY package*.json ./
 
+#Set environment var for React App version
+ARG REACT_APP_VERSION
+ENV REACT_APP_VERSION $REACT_APP_VERSION
+
 # Install dependencies
 RUN npm install
 
