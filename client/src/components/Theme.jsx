@@ -13,8 +13,7 @@ const Theme = createTheme({
     },
 
     typography: {
-        fontFamily: 'Roboto, sans-serif', // Default font
-        logo: 'KaushanScript, sans-serif',
+        fontFamily: 'Frutiger, Arial, sans-serif', // Default font
         logoLink: {
             textDecoration: 'none',
             padding: '1%',

@@ -5,3 +5,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Frutiger';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Frutiger'), url('/public/fonts/Frutiger.woff') format('woff');
+}   
+
+@font-face {
+    font-family: 'Frutiger Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Frutiger Bold'), url('/public/fonts/Frutiger_bold.woff') format('woff');
+}

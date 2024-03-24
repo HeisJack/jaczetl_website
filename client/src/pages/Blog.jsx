@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-function About(){
+function Blog(){
     return(
         <div>
-            This is the About page.
+            This is the Blog page.
         </div>
     );
 }
 
-export default About;
+export default Blog;

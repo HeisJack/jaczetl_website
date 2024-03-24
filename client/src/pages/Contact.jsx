@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-function About(){
+function Contact(){
     return(
         <div>
-            This is the About page.
+            This is the Contact page.
         </div>
     );
 }
 
-export default About;
+export default Contact;
